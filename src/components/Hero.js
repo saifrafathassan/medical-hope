@@ -32,7 +32,7 @@ const Hero = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [slides]);
+  }, []);
   
   const settings = {
     infinite: true,

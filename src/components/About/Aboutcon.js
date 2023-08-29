@@ -137,7 +137,7 @@ const [selectedImageIndex, setSelectedImageIndex] = useState(null);
     <button className='bg-black rounded-md py-1 px-1 text-gray-400' onClick={prevImage}>
       <IoMdArrowDropleft size={30}/>
     </button>
-    <img className='w-[300px] md:w-[550px]' src={images[selectedImageIndex]}/>
+    <img className='w-[300px] md:w-[550px]' src={images[selectedImageIndex]} alt='/'/>
     <button className='bg-black rounded-md py-1 px-1 text-gray-400' onClick={nextImage}>
       <IoMdArrowDropright size={30}/>
     </button>
