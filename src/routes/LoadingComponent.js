@@ -15,7 +15,7 @@ export default function LoadingComponent({ children }) {
   if (loading) {
     return (
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-        <Loading type={'spin'} color={'#000'} />
+        <Loading type={'spin'} color={'#0891b2'} />
       </div>
     );
   }
