@@ -6,17 +6,20 @@ import Testimonial from '../components/Testimonial';
 import Fqs from '../components/Fqs';
 import Footer from '../components/Footer';
 import Pricing from '../components/Pricing';
+import LoadingComponent from './LoadingComponent';
 
 const Home = () => {
   return (
     <div>
-      <Navbar/>
-      <Hero/>
-      <Content/>
-      <Testimonial/>
-      <Pricing/>
-      <Fqs/>
-      <Footer/>
+      <LoadingComponent>
+        <Navbar/>
+        <Hero/>
+        <Content/>
+        <Testimonial/>
+        <Pricing/>
+        <Fqs/>
+        <Footer/>
+      </LoadingComponent>
     </div>
   )
 }

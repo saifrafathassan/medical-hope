@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import Home from './routes/Home'
 import Services from './routes/Services'
 import {Route, Routes} from 'react-router-dom'
@@ -6,6 +6,7 @@ import Blog from "./routes/Blog";
 import About from "./routes/About";
 import Contact from "./routes/Contact";
 import Details from "./routes/Details";
+
 
 
 function App() {

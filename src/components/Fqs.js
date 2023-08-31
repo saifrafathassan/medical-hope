@@ -18,7 +18,7 @@ const Fqs = () => {
   const handleClick4 = () => setText4(!text4)
 
   return (
-    <div className='w-full h-full py-20'>
+    <div className='w-full h-full py-20 md:px-0 px-2'>
         <div className='fqs border-t mt-32 flex flex-wrap justify-center w-full lg:mx-auto lg:max-w-[75%]'>
           <div className='pt-32 w-full md:w-auto px-2'>
             <div>

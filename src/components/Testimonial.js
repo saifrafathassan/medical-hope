@@ -42,11 +42,12 @@ const Testimonial = () => {
     speed: 700,
     slidesToShow: 1,
     slidesToScroll: 1,
-    touchMove: false,
+    touchMove: true,
+    arrows: true,
 }
 
   return (
-    <div className='w-full overflow-hidden h-screen relative top-[-40px]' style={{background: `url(${TesImg})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+    <div className='w-full overflow-hidden h-screen relative top-[-40px] md:px-0 px-3' style={{background: `url(${TesImg})`, backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
             <div  ref={sectionRef} style={{opacity: isVisible ? 1 : 0, transform: isVisible ? 'translateY(0)' : 'translateY(60px)', transition: 'opacity 2s, transform 2s'}}>
             <div className='flex flex-col text-center items-center py-32'>
                 <p className='text-[#999] pb-6'>TESTIMONIAL</p>
@@ -59,21 +60,19 @@ const Testimonial = () => {
                         <img className='rounded-full' src={img.image} alt="" />
                     </div>
                     <div className="flex justify-around gap-10 items-center text-center pt-12">
-                        <div className="cursor-pointer hover:text-main duration-300" onClick={() => sliderRef.current.slickPrev()}><IoIosArrowBack size={40}/></div>
-                        <p className="w-[450px] lg:w-[900px] text-[15px] lg:text-3xl">
+                        <p className="w-[300px] md:w-[450px] lg:w-[900px] text-[15px] lg:text-3xl">
                             “It’s been an absolute pleasure to work with hope,
                             <br/>their response to our brief exceeded
                             expectations and the execution was efficient,
                             professional and very reassuring. I’d fully recommend
                             theme.”
                         </p>
-                        <div className="cursor-pointer hover:text-main duration-300" onClick={() => sliderRef.current.slickNext()}><IoIosArrowForward size={40}/></div>
                     </div>
                     <div className="flex gap-5 flex-col items-center py-12">
                         <h2 className="text-2xl font-bold text-main">{img.name}</h2>
                         <p className="text-[#707070]">Golden Lotus Apartment, Brooklyn, USA</p>
                     </div>
-                    <div className="border-t flex flex-row justify-center gap-10 lg:gap-32">
+                    <div className="border-t hidden flex-row justify-center gap-10 lg:gap-32 md:flex">
                         <div className="opacity-50 hover:opacity-100 duration-300 pt-12 cursor-pointer">
                             <img src={Bimg} alt="" />
                         </div>
@@ -93,6 +92,10 @@ const Testimonial = () => {
                 </div>
                 ))}
             </Slider>
+            <div className="h-full top-[-250px] md:top-[-350px] relative z-[200] w-full flex md:px-12 justify-between">
+                <div className="cursor-pointer hover:text-main duration-300" onClick={() => sliderRef.current.slickPrev()}><IoIosArrowBack size={30}/></div>
+                <div className="cursor-pointer hover:text-main duration-300" onClick={() => sliderRef.current.slickNext()}><IoIosArrowForward size={30}/></div>
+            </div>
          </div>
     </div>
   )

@@ -32,7 +32,7 @@ const [selectedImageIndex, setSelectedImageIndex] = useState(null);
   }
 
   return (
-    <div className='w-full h-full py-32'>
+    <div className='w-full h-full py-32 md:px-0 px-2'>
       <main>
         <section className='about-content flex flex-col justify-center items-center'>
             <div className='w-full lg:w-[900px] px-2'>

@@ -10,7 +10,7 @@ import Svg2 from '../assets/logo-dark.png'
 
 const Footer = () => {
   return (
-    <div className='py-12 w-full'>
+    <div className='py-12 w-full md:px-0 px-4'>
         <footer className='my-10 pb-12 pt-32 border-b border-t lg:mx-auto w-full md:w-[800px] lg:w-[75%]'>
           <main className='flex flex-wrap justify-center gap-10'>
             <div className='firstcol px-2'>

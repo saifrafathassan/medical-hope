@@ -47,7 +47,7 @@ const Content = () => {
 
 
   return (
-    <div>
+    <div className='md:px-0 px-3'>
         <div className="content h-full w-full items-center flex flex-col md:flex-row justify-center gap-10 py-32 px-3">
             <div className="flex justify-between w-full items-center border-b lg:w-[400px] ">
               <div className="pb-6">

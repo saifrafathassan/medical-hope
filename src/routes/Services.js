@@ -5,16 +5,19 @@ import Testimonial from '../components/Testimonial'
 import Pricing from '../components/Pricing'
 import Servicesimg from '../components/Services/Servicesimg'
 import Servicescon from '../components/Services/Servicescon'
+import LoadingComponent from './LoadingComponent';
 
 const Services = () => {
   return (
     <div>
-      <Navbar/>
-      <Servicesimg/>
-      <Servicescon/>
-      <Testimonial/>
-      <Pricing/>
-      <Footer/>
+      <LoadingComponent>
+        <Navbar/>
+        <Servicesimg/>
+        <Servicescon/>
+        <Testimonial/>
+        <Pricing/>
+        <Footer/>
+      </LoadingComponent>
     </div>
   )
 }

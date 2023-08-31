@@ -1,14 +1,17 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import Detailsslid from '../components/Details/Detailsslid'
+import Detailscon from '../components/Details/Detailscon'
+import LoadingComponent from './LoadingComponent';
 
 const Details = () => {
   return (
     <div>
-      <Navbar/>
-      <Detailsslid/>
-      <Footer/>
+      <LoadingComponent>
+        <Navbar/>
+        <Detailscon/>
+        <Footer/>
+      </LoadingComponent>
     </div>
   )
 }
