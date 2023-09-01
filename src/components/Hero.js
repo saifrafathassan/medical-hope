@@ -64,7 +64,7 @@ const Hero = () => {
       </div>
         ))}
       </Slider>
-            <div className="icons relative top-[-450px] w-full h-full flex justify-between">
+            <div className="icons relative top-[-250px] lg:top-[-450px] w-full h-full flex justify-between">
               <div onClick={() => sliderRef.current.slickPrev()} className={`bg-white left-arrow rounded-full p-2 duration-600 cursor-pointer hover:bg-black hover:text-white ${isHovered ? 'show-arrow-left' : ''}`}>
                 <BsArrowLeftShort size={40} />
               </div>
