@@ -28,7 +28,7 @@ const Contactcon = () => {
                     <p className='text-[#999] pb-2 lg:pb-4'>CONTACT</p>
                     <h1 className='text-2xl lg:text-5xl font-light'><span className='text-main font-bold'>We Alway Ready</span> To Help You</h1>
                 </div>
-                <div className='bg-white md:w-[600px] lg:w-[1100px] h-full py-32 px-20'>
+                <div className='bg-white md:w-[600px] lg:w-[1100px] h-full py-20 px-20'>
                     <form className='flex flex-col lg:flex-row gap-5 h-full w-full'>
                         <input type="text" placeholder='Your Name' className='border py-3 px-14'/>
                         <input type="text" placeholder='Email Address' className='border py-3 px-14'/>
@@ -36,6 +36,9 @@ const Contactcon = () => {
                     </form>
                     <div className='pt-12'>
                         <textarea className='border w-full h-[200px] p-4' type="messege" placeholder='Wirte your message here' />
+                    </div>
+                    <div className='items-center text-center pt-5'>
+                        <button type='submit' className='bg-main py-5 px-10 font-bold text-white duration-300 hover:bg-black'>SEND MESSAGE</button>
                     </div>
                 </div>
             </div>
