@@ -11,7 +11,7 @@ const Pricing = () => {
         <div className='py-20 flex flex-wrap justify-center gap-5 '>
           <div className='flex flex-col gap-10 border w-[300px] p-[40px] tickt'>
               <div className='flex flex-col gap-5'>
-                  <p className='text-[#999] text-1xl'>TRIAL</p>main
+                  <p className='text-[#999] text-1xl'>TRIAL</p>
                   <h1 className='text-2xl pb-3'><span className='text-[#669900] text-3xl font-bold'>$5</span> / month</h1>
                   <p className='text-[#999] text-1xl'>Free with 14 days trial, then you can choose plan</p>
               </div>
@@ -64,7 +64,7 @@ const Pricing = () => {
           <div className='flex flex-col gap-10 border w-[300px] p-[40px] '>
               <div className='flex flex-col gap-5'>
                   <p className='text-[#999] text-1xl'>TRIAL</p>
-                  <h1 className='text-2xl pb-3'><span className='text-[#669900] text-3xl font-bold'>$5</span> / month</h1>
+                  <h1 className='text-2xl pb-3'><span className='text-[#669900] text-3xl font-bold'>$99</span> / month</h1>
                   <p className='text-[#999] text-1xl'>Free with 14 days trial, then you can choose plan</p>
               </div>
               <div className='justify-between gap-8 flex flex-col border-t pt-6 h-full'> 
