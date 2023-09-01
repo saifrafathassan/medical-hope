@@ -72,7 +72,7 @@ const Testimonial = () => {
                         <h2 className="text-2xl font-bold text-main">{img.name}</h2>
                         <p className="text-[#707070]">Golden Lotus Apartment, Brooklyn, USA</p>
                     </div>
-                    <div className="border-t hidden flex-row justify-center gap-10 lg:gap-32 md:flex">
+                    <div className="border-t flex-row justify-center gap-10 lg:gap-32 flex">
                         <div className="opacity-50 hover:opacity-100 duration-300 pt-12 cursor-pointer">
                             <img src={Bimg} alt="" />
                         </div>
@@ -92,7 +92,7 @@ const Testimonial = () => {
                 </div>
                 ))}
             </Slider>
-            <div className="h-full top-[-250px] md:top-[-350px] relative z-[200] w-full flex md:px-12 justify-between">
+            <div className="h-full top-[-350px] md:top-[-350px] relative z-[200] w-full flex md:px-12 justify-between">
                 <div className="cursor-pointer hover:text-main duration-300" onClick={() => sliderRef.current.slickPrev()}><IoIosArrowBack size={30}/></div>
                 <div className="cursor-pointer hover:text-main duration-300" onClick={() => sliderRef.current.slickNext()}><IoIosArrowForward size={30}/></div>
             </div>
