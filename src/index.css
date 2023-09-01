@@ -15,6 +15,13 @@
     /* line-height: 1.7142857143; */
     width: 100%;
   }
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 50px;
+  }
   input, textarea {
     outline: none;
   }
