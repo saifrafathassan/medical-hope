@@ -97,7 +97,7 @@ useEffect(() => {
             {isSticky ? (<li><div className={activePath === '/contact' ? 'link text-main' : 'hover:text-main link'}><Link onClick={() => window.scrollTo(0,0)} to='/contact'>CONTACT</Link></div></li>) : (<li><div className={activePath === '/contact' ? 'link active' : 'link'}><Link to='/contact'>CONTACT</Link></div></li>)}
           </ul>
             <div className="btn">
-              <button className='py-[15px] px-[30px] bg-primary text-white hover:bg-black duration-300 font-bold'>BOOK AN APPOINTMENT</button>
+              <Link to='/' ><button className='py-[15px] px-[30px] bg-primary text-white hover:bg-black duration-300 font-bold'>BOOK AN APPOINTMENT</button></Link>
             </div>
         </div> 
         {/* moblie menu */}
