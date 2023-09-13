@@ -21,15 +21,18 @@ useEffect(() => {
 }, [location])
 
 useEffect(() => {
-    const handleScroll = _.throttle(() => { // use lodash's throttle function
-      if (window.scrollY > 400) {
+    const showThreshold = 600; 
+    const hideThreshold = 510;
+
+    const handleScroll = _.throttle(() => {
+      if (window.scrollY > showThreshold) {
         setShowButton(true);
         setIsSticky(true);
-      } else {
+      } else if (window.scrollY < hideThreshold) {
         setIsSticky(false);
         setShowButton(false);
       }
-    }, 300);
+    }, 1000);
   
   window.addEventListener('scroll', handleScroll);
   return () => {
