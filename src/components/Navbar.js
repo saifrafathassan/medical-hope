@@ -21,8 +21,8 @@ useEffect(() => {
 }, [location])
 
 useEffect(() => {
-    const showThreshold = 600; 
-    const hideThreshold = 510;
+    const showThreshold = 500; 
+    const hideThreshold = 400;
 
     const handleScroll = _.throttle(() => {
       if (window.scrollY > showThreshold) {
