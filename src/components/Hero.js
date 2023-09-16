@@ -1,6 +1,6 @@
 import React, {  useRef, useState, useEffect} from "react";
 import Slider from "react-slick";
-import Slide1 from '../assets/slider/doctor-patient.jpg';
+import Slide1 from '../assets/Untitled-1.jpg';
 import Slide2 from '../assets/slider/slide2.jpg';
 import { BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
 import "slick-carousel/slick/slick.css";
