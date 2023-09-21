@@ -55,7 +55,7 @@ const Servicescon = () => {
                 <li className='pb-6 text-main'><BsCapsulePill size={50}/></li>
                 <h1 className='font-bold text-[20px]'>Oncology</h1>
                 <p className='text-[#999]'>Lorem ispm dolor sit amaettum prahraph dolor sum</p>
-                <Link onClick={() => window.scrollTo(0,0)} to='/details'></Link><button className='hover:text-main duration-300 text-black'>MORE</button>
+                <Link onClick={() => window.scrollTo(0,0)} to='/details'><button className='hover:text-main duration-300 text-black'>MORE</button></Link>
             </div>
             <div className='flex flex-col gap-5 hover:border-t-main duration-300 hover:bg-[#e7e4c4de] items-start p-10 w-[350px] border'>
                 <li className='pb-6 text-main'><FaTooth size={50}/></li>
