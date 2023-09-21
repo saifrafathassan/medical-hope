@@ -7,15 +7,15 @@ import Fimg3 from '../assets/blog/03.jpg'
 
 
 const Fqs = () => {
-  const [text1, setText1] = useState(false)
-  const [text2, setText2] = useState(false)
-  const [text3, setText3] = useState(false)
-  const [text4, setText4] = useState(false)
+  const [activeText, setActiveText] = useState(null)
 
-  const handleClick1 = () => setText1(!text1)
-  const handleClick2 = () => setText2(!text2)
-  const handleClick3 = () => setText3(!text3)
-  const handleClick4 = () => setText4(!text4)
+  const handleClick = (textNumber) => {
+    if (activeText === textNumber) {
+      setActiveText(null); // if the clicked text is already active, deactivate it
+    } else {
+      setActiveText(textNumber); // otherwise, activate the clicked text
+    }
+  }
 
   return (
     <div className='w-full h-full py-20 md:px-0 px-2'>
@@ -56,26 +56,26 @@ const Fqs = () => {
             <h1 className='text-5xl pb-12 font-bold text-main'>FAQs</h1>
             <div className='max-w-full'>
               <div className='flex flex-col mx-auto py-3'>
-              <h1 onClick={handleClick1} className={text1 ? 'text-main duration-300 flex justify-between items-center lg:text-[18px] font-bold cursor-pointer' : 'flex justify-between items-center lg:text-[18px] font-bold cursor-pointer'}>Can I Get A Divorce Without A Consultant{text1 ? <FaAngleLeft size={25} className='-rotate-90 duration-300'/> : <FaAngleLeft size={25} className='duration-300'/>}</h1>
-              <div className={`div ${text1 ? 'show' : 'div'}`}>
+              <h1 onClick={() => handleClick(1)} className={activeText === 1 ? 'text-main duration-300 flex justify-between items-center lg:text-[18px] font-bold cursor-pointer' : 'flex justify-between items-center lg:text-[18px] font-bold cursor-pointer'}>Can I Get A Divorce Without A Consultant{activeText === 1 ? <FaAngleLeft size={25} className='-rotate-90 duration-300'/> : <FaAngleLeft size={25} className='duration-300'/>}</h1>
+              <div className={`div ${activeText === 1 ? 'show' : 'div'}`}>
                   <p className='leading-6 text-center text-[15px] text-[#999] py-5 w-[500px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur elit lacinia ornare. In volutpat rutrum molestie. Vivamus efficitur orci, ac gravida eros bibendum non. Nullam auctor varius fer vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
               </div>
               </div>
               <div className='flex flex-col mx-auto py-3'>
-              <h1 onClick={handleClick2} className={text2 ? 'text-main duration-300 flex justify-between items-center lg:text-[18px] font-bold cursor-pointer' : 'flex justify-between items-center lg:text-[18px] font-bold cursor-pointer'}>I Have A Technical Problem Or Support Issue I Need Resolved, Who Do I Email?{text2 ? <FaAngleLeft size={25} className='-rotate-90 duration-300'/> : <FaAngleLeft size={25} className='duration-300'/>}</h1>
-              <div className={`div ${text2 ? 'show' : 'div'}`}>
+              <h1 onClick={() => handleClick(2)} className={activeText === 2 ? 'text-main duration-300 flex justify-between items-center lg:text-[18px] font-bold cursor-pointer' : 'flex justify-between items-center lg:text-[18px] font-bold cursor-pointer'}>I Have A Technical Problem Or Support Issue I Need Resolved, Who Do I Email?{activeText === 2 ? <FaAngleLeft size={25} className='-rotate-90 duration-300'/> : <FaAngleLeft size={25} className='duration-300'/>}</h1>
+              <div className={`div ${activeText === 2 ? 'show' : 'div'}`}>
                   <p className='leading-6 text-center text-[15px] text-[#999] py-5 w-[500px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur elit lacinia ornare. In volutpat rutrum molestie. Vivamus efficitur orci, ac gravida eros bibendum non. Nullam auctor varius fer vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
               </div>
               </div>
               <div className='flex flex-col mx-auto py-3'>
-              <h1 onClick={handleClick3} className={text3 ? 'text-main duration-300 flex justify-between items-center lg:text-[18px] font-bold cursor-pointer' : 'flex justify-between items-center lg:text-[18px] font-bold cursor-pointer'}>What Other Services Are You Compatible With?{text3 ? <FaAngleLeft size={25} className='-rotate-90 duration-300'/> : <FaAngleLeft size={25} className='duration-300'/>}</h1>
-              <div className={`div ${text3 ? 'show' : 'div'}`}>
+              <h1 onClick={() => handleClick(3)} className={activeText === 3 ? 'text-main duration-300 flex justify-between items-center lg:text-[18px] font-bold cursor-pointer' : 'flex justify-between items-center lg:text-[18px] font-bold cursor-pointer'}>What Other Services Are You Compatible With?{activeText === 3 ? <FaAngleLeft size={25} className='-rotate-90 duration-300'/> : <FaAngleLeft size={25} className='duration-300'/>}</h1>
+              <div className={`div ${activeText === 3 ? 'show' : 'div'}`}>
                   <p className='leading-6 text-center text-[15px] text-[#999] py-5 w-[500px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur elit lacinia ornare. In volutpat rutrum molestie. Vivamus efficitur orci, ac gravida eros bibendum non. Nullam auctor varius fer vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
               </div>
               </div>
               <div className='flex flex-col mx-auto py-3'>
-              <h1 onClick={handleClick4} className={text4 ? 'text-main duration-300 flex justify-between items-center lg:text-[18px] font-bold cursor-pointer' : 'flex justify-between items-center lg:text-[18px] font-bold cursor-pointer'}>Are You Hiring?{text4 ? <FaAngleLeft size={25} className='-rotate-90 duration-300'/> : <FaAngleLeft size={25} className='duration-300'/>}</h1>
-              <div className={`div ${text4 ? 'show' : 'div'}`}>
+              <h1 onClick={() => handleClick(4)} className={activeText === 4 ? 'text-main duration-300 flex justify-between items-center lg:text-[18px] font-bold cursor-pointer' : 'flex justify-between items-center lg:text-[18px] font-bold cursor-pointer'}>Are You Hiring?{activeText === 4 ? <FaAngleLeft size={25} className='-rotate-90 duration-300'/> : <FaAngleLeft size={25} className='duration-300'/>}</h1>
+              <div className={`div ${activeText === 4 ? 'show' : 'div'}`}>
                   <p className='leading-6 text-center text-[15px] text-[#999] py-5 w-[500px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur elit lacinia ornare. In volutpat rutrum molestie. Vivamus efficitur orci, ac gravida eros bibendum non. Nullam auctor varius fer vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</p>
               </div>
               </div>
@@ -87,5 +87,4 @@ const Fqs = () => {
 }
 
 export default Fqs
-
 
