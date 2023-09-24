@@ -71,7 +71,7 @@ const Content = () => {
               <div className="pb-6 text-main"><FaWheelchair size={60}/></div>
             </div>
         </div>
-        <div ref={sectionRef} className='my-12 md:my-0 hero items-start flex flex-col h-screen justify-start ml-[290px]' style={{background: `url(${Img})`, backgroundPosition: 'center right', backgroundRepeat: 'no-repeat', opacity: isVisible ? 1 : 0, transform: isVisible ? 'translateY(0)' : 'translateY(60px)', transition: 'opacity 2s, transform 2s'}}>
+        <div ref={sectionRef} className='my-12 md:my-0 hero items-start flex flex-col h-full md:h-screen justify-start ml-[290px]' style={{background: `url(${Img})`, backgroundPosition: 'center right', backgroundRepeat: 'no-repeat', opacity: isVisible ? 1 : 0, transform: isVisible ? 'translateY(0)' : 'translateY(60px)', transition: 'opacity 2s, transform 2s'}}>
             <div className='pl-2 lg:pl-6'>
                 <p className='text-[#999] pb-4 lg:pb-6'>WHY CHOOSE HOPE MEDICAL</p>
                 <h1 className='text-3xl lg:text-5xl font-light'><span className='text-main font-bold'>The Best</span> For Your Health</h1>

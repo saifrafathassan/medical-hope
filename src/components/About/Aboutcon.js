@@ -75,7 +75,7 @@ const [selectedImageIndex, setSelectedImageIndex] = useState(null);
                 <div>
                     <img className='cursor-pointer about-img duration-300' src={Aimg3} onClick={() => openModal(2)} alt="" />
                 </div>
-                <div className='pt-32 flex-wrap flex justify-center gap-10'>
+                <div className='pt-32 text-center md:text-start flex-wrap flex justify-center gap-10'>
                     <div className='w-[400px]'>
                         <h1 className='font-bold text-lg pb-8'>MELBOURNE</h1>
                          <p className='text-[#999] pb-2 text-[17px]'>258 New Design St, VIC 10000, Austria</p>
