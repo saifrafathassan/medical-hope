@@ -5,7 +5,7 @@
 
 <p>Credits for the design goes to <a href='https://elements.envato.com/'>envatoelements</a></p>
 
-👉 Live Demo: <a target="_blank" href='https://medical-hope-app.netlify.app/'>Live Demo</a>
+👉 Live Demo: <a href='https://medical-hope-app.netlify.app/' target="_blank">Live Demo</a>
 
 <h3>Build with:</h3>
 
