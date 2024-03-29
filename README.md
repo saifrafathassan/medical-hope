@@ -1,7 +1,7 @@
 
 <h2>About the project</h2>
 
-  <p><b>Medical Hope</b> Medical Hope is an online clinic website that allows users To reserve the appropriate time and view the history of the doctors and see our cases studies</p>
+  <p><b>Medical Hope</b> is an online clinic website that allows users To reserve the appropriate time and view the history of the doctors and see our cases studies</p>
 
 <p>Credits for the design goes to <a href='https://elements.envato.com/'>envatoelements</a></p>
 
