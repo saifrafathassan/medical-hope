@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import _ from 'lodash';
 import Svg from '../assets/svg.png'
 import { LuClock9} from 'react-icons/lu'
 import { FaPhoneAlt, FaBars, FaTimes} from 'react-icons/fa'
@@ -21,31 +20,24 @@ useEffect(() => {
 }, [location])
 
 useEffect(() => {
-    const showThreshold = 500; 
-    const hideThreshold = 400;
-
-    const handleScroll = _.throttle(() => {
-      if (window.scrollY > showThreshold) {
-        setShowButton(true);
-        setIsSticky(true);
-      } else if (window.scrollY < hideThreshold) {
-        setIsSticky(false);
-        setShowButton(false);
-      }
-    }, 1000);
-  
-  window.addEventListener('scroll', handleScroll);
-  return () => {
-    window.removeEventListener('scroll', handleScroll);
-  };
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 500) {
+      setShowButton(true);
+      setIsSticky(true);
+    } else {
+      setShowButton(false);
+      setIsSticky(false);
+    }
+  });
 }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
+  
+const scrollTo = () => {
+  const c = document.documentElement.scrollTop || document.body.scrollTop;
+  if (c > 0) {
+    window.requestAnimationFrame(scrollTo);
+    window.scrollTo(0, c - c / 8); 
+  }
+};
 
   return (
     <div className='bg-main pt-5 relative w-full overflow-hidden'>
@@ -127,7 +119,7 @@ useEffect(() => {
             </div>
         </div>
         {showButton && (
-        <button className='bg-primary flex justify-center items-center h-[60px] w-[60px] fixed right-0 bottom-0 mb-[40px] mr-[40px] z-[1299] hover:bg-black duration-300' onClick={scrollToTop}>
+        <button className='bg-primary flex justify-center items-center h-[60px] w-[60px] fixed right-0 bottom-0 mb-[40px] mr-[40px] z-[1299] hover:bg-black duration-300' onClick={scrollTo}>
           <IoIosArrowUp color='white' size={25}/>
         </button>
       )}
@@ -136,3 +128,12 @@ useEffect(() => {
 }
 
 export default Navbar
+
+
+
+// setShowButton(true);
+// setIsSticky(true);
+
+
+// setIsSticky(false);
+// setShowButton(false);
