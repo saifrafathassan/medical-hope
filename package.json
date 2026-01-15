@@ -17,7 +17,7 @@
     "react-loading": "^2.0.3",
     "react-lodash": "^0.1.2",
     "react-modal": "^3.16.1",
-    "react-router-dom": "^6.15.0",
+    "react-router-dom": "^6.30.3",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
